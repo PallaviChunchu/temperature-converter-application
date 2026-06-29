@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Temperature Converter</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+
+        <!-- Top Icon -->
+
+        <div class="top-icon">
+            <i class="fa-solid fa-temperature-half"></i>
+            <span>°C</span>
+        </div>
+
+        <!-- Snow Effects -->
+
+        <div class="snow snow1">
+            <i class="fa-regular fa-snowflake"></i>
+        </div>
+
+        <div class="snow snow2">
+            <i class="fa-regular fa-snowflake"></i>
+        </div>
+
+        <!-- Heading -->
+
+        <h1>Temperature Converter</h1>
+
+        <!-- Temperature -->
+
+        <label>Enter Temperature</label>
+
+        <div class="input-box">
+
+            <div class="left-icon">
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+            </div>
+
+            <input type="number" id="temperature" placeholder="Enter Temperature">
+
+            <div class="right-text"> °C
+            </div>
+
+        </div>
+
+        <!-- Convert From -->
+
+        <label>Convert From</label>
+
+        <div class="select-box">
+
+            <div class="left-icon">
+                <i class="fa-solid fa-earth-americas"></i>
+            </div>
+
+            <select id="unit">
+                <option value="celsius"> Celsius (°C) </option>
+                <option value="fahrenheit"> Fahrenheit (°F) </option>
+                <option value="kelvin"> Kelvin (K) </option>
+            </select>
+
+        </div>
+
+        <!-- Button -->
+
+        <button id="convertBtn">
+            <i class="fa-solid fa-right-left"></i> Convert
+        </button>
+
+        <!-- Divider -->
+
+        <div class="divider">
+            <hr>
+            <div class="divider-icon">
+                <i class="fa-solid fa-temperature-half"></i>
+            </div>
+            <hr>
+        </div>
+
+        <!-- Result -->
+
+        <div class="result-box">
+
+            <div class="weather-icon">
+                <i class="fa-solid fa-sun"></i>
+            </div>
+
+            <div id="result">
+                <span>38 °C</span>
+                =
+                <span class="orange">100.40 °F</span>
+                =
+                <span class="cyan">311.15 K</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

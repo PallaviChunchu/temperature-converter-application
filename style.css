@@ -1,0 +1,583 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    overflow: hidden;
+    background: radial-gradient(circle at top, #1b265f 0%, #121d4f 45%, #09122f 100%);
+}
+
+/* ===========================
+        BACKGROUND
+=========================== */
+
+.background {
+    position: fixed;
+    inset: 0;
+    background:radial-gradient(circle, #4065ff22 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: .25;
+    z-index: -1;
+}
+
+/* ===========================
+        CARD
+=========================== */
+
+.container {
+    max-width: 490px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, rgba(72, 167, 255, .95), rgba(48, 88, 210, .93), rgba(24, 33, 120, .96));
+    border-radius: 28px;
+    padding: 32px;
+    border: 1px solid rgba(255, 255, 255, .15);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .45), inset 0 1px 1px rgba(255, 255, 255, .25);
+    position: relative;
+}
+
+/* ===========================
+        TOP ICON
+=========================== */
+
+.top-icon {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:radial-gradient(circle,rgba(112, 223, 255, .45),rgba(112, 223, 255, .15));
+    color: white;
+    font-size: 33px;
+    box-shadow:0 10px 35px rgba(0, 0, 0, .25);
+}
+
+.top-icon span {
+    font-size: 18px;
+    margin-top: -40px;
+    margin-left: 44px;
+    font-weight: 600;
+}
+
+/* ===========================
+      SNOW
+=========================== */
+
+.snow {
+    position: absolute;
+    color: #69d9ff;
+    opacity: .18;
+    font-size: 30px;
+    top: 88px;
+}
+
+.snow1 {
+    left: 165px;
+}
+
+.snow2 {
+    right: 165px;
+}
+
+/* ===========================
+      TITLE
+=========================== */
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 650;
+}
+
+/* ===========================
+      LABEL
+=========================== */
+
+label {
+    display: block;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* ===========================
+      INPUT
+=========================== */
+
+.input-box,
+.select-box {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+.left-icon {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edf2ff;
+    color: #356dff;
+    font-size: 22px;
+}
+
+.input-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #222;
+
+}
+
+.right-text {
+    width: 90px;
+    text-align: center;
+    color: #1d45c6;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.select-box select {
+    flex: 0.95;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 15px;
+    cursor: pointer;
+    color: #222;
+    background: white;
+}
+
+.input-box input::placeholder {
+    color: #666;
+    font-weight: 500;
+}
+
+/*==============================
+        BUTTON
+===============================*/
+
+button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #4f96ff, #7445ff);
+    box-shadow: 0 15px 35px rgba(39, 102, 255, .45);
+    transition: .35s;
+}
+
+button i {
+    margin-right: 12px;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 45px rgba(48, 111, 255, .55);
+}
+
+button:active {
+    transform: scale(.98);
+}
+
+
+/*==============================
+        DIVIDER
+===============================*/
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.407);
+}
+
+.divider-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.622);
+    font-size: 18px;
+}
+
+/*==============================
+        RESULT
+===============================*/
+
+.result-box {
+    margin-top: -10px;
+    border-radius: 10px;
+    padding: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .18);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.553);
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #565450;
+    color: #ffb400;
+    font-size: 23px;
+}
+
+#result {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.orange {
+    color: #ff7a00;
+}
+
+.cyan {
+    color: #13b5ff;
+}
+
+/*==============================
+      INPUT EFFECT
+===============================*/
+
+.input-box:focus-within {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 35px rgba(45, 95, 255, .25);
+}
+
+.select-box:focus-within {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 35px rgba(45, 95, 255, .25);
+}
+
+
+/*==============================
+      ANIMATION
+===============================*/
+
+.container {
+    animation: popup .8s ease;
+}
+
+@keyframes popup {
+
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.top-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.snow {
+    animation: rotateSnow 10s linear infinite;
+}
+
+@keyframes rotateSnow {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*==============================
+      RESPONSIVE TABLET
+===============================*/
+
+@media (max-width:992px) {
+
+    .container {
+        max-width: 460px;
+        height: auto;
+        padding: 28px;
+    }
+
+    .snow1 {
+        left: 145px;
+    }
+
+    .snow2 {
+        right: 145px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button {
+        height: 56px;
+        font-size: 20px;
+    }
+
+    #result {
+        font-size: 17px;
+        gap: 12px;
+    }
+}
+
+/* ===============================
+      MOBILE
+===============================*/
+
+@media (max-width:768px) {
+
+    body {
+        padding: 20px 12px;
+        height: auto;
+        min-height: 100vh;
+        overflow: auto;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 24px 20px;
+    }
+
+    .top-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+    }
+
+    .top-icon span {
+        font-size: 15px;
+        margin-top: -35px;
+        margin-left: 38px;
+    }
+
+    .snow {
+        display: none;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .input-box,
+    .select-box {
+        height: 50px;
+    }
+
+    .left-icon {
+        width: 48px;
+        font-size: 20px;
+    }
+
+    .input-box input {
+        font-size: 16px;
+    }
+
+    .right-text {
+        width: 60px;
+        font-size: 20px;
+    }
+
+    .select-box select {
+        font-size: 16px;
+    }
+
+    button {
+        height: 54px;
+        font-size: 18px;
+    }
+
+    .divider {
+        margin: 20px 0;
+    }
+
+    .result-box {
+        padding: 18px;
+        gap: 15px;
+    }
+
+    .weather-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    #result {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+        overflow-x: auto;
+        font-size: 16px;
+    }
+
+}
+
+/* ===============================
+      SMALL MOBILE
+===============================*/
+
+@media (max-width:480px) {
+
+    .container {
+        padding: 18px;
+        border-radius: 20px;
+    }
+
+    .top-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 24px;
+    }
+
+    .top-icon span {
+        font-size: 14px;
+        margin-top: -30px;
+        margin-left: 34px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .input-box,
+    .select-box {
+        height: 46px;
+    }
+
+    .left-icon {
+        width: 44px;
+        font-size: 18px;
+    }
+
+    .input-box input {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .right-text {
+        width: 55px;
+        font-size: 18px;
+    }
+
+    .select-box select {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    button {
+        height: 50px;
+        font-size: 17px;
+    }
+
+    .weather-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .result-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        padding: 18px;
+    }
+
+    #result {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+        overflow-x: auto;
+        font-size: 15px;
+    }
+
+}
